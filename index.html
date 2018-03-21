@@ -21,16 +21,15 @@
 
 <article itemscope="itemscope" itemtype="http://schema.org/Person" ng-app="resume">
   <header class="header" role="banner">
-    <hgroup><img class="headshot" itemprop="image" src="https://i1.sndcdn.com/avatars-000070510214-qwx6xo-t500x500.jpg" alt="Gerardo Verduzco"/>
+    <hgroup><img class="headshot" itemprop="image" src="https://instagram.fsjc1-3.fna.fbcdn.net/vp/d88ed93d6570cf2cc659b1b3084d40fb/5B4F5DB8/t51.2885-15/e35/29402091_395373154261598_3884579447130554368_n.jpg" alt="Gerardo Verduzco"/>
       <h1 itemprop="name">Gerardo Verduzco</h1>
       <h2 class="user-description" itemprop="description">Learning my way into the tech industry</h2>
     </hgroup>
-    <address class="contact-details">   <a class="telephone" href="tel:+1-610-694-0883" itemprop="telephone"><span class="content">610.694.0883</span></a>
-      <div class="org" itemscope="itemscope" itemtype="http://schema.org/Organization"><a class="website" href="http://www.64interactive.com" itemprop="url"><span itemprop="name">64 Interactive, LLC</span></a>
+    <div class="org" itemscope="itemscope" itemtype="http://schema.org/Organization"><a class="website" href="http://devmission.org/" itemprop="url"><span itemprop="name">Dev/Mission</span></a>
         <div class="address" itemscope="itemscope" itemprop="address" itemtype="http://schema.org/PostalAddress">
-          <div itemprop="streetAddress">Mission District</div><span itemprop="addressLocality">San Diego </span><abbr title="California" itemprop="addressRegion">CA </abbr><span itemprop="postalCode">92101</span>
+          <div itemprop="streetAddress">Mission District</div><span itemprop="addressLocality">San Francisco </span><abbr title="California" itemprop="addressRegion"> CA </abbr><span itemprop="postalCode">94013</span>
         </div>
-      </div><a class="email" href="verduzcogerardo0 @gmail.com" itemprop="email"><span class="content">dwilt4rville@gmail.com</span></a>
+      </div><p> verduzcogerardo0@gmail.com</p>
     </address>
   </header>
   <div class="content">
@@ -39,7 +38,11 @@
         <h1 class="languages-heading">Languages</h1>
       </header>
       <ul class="languages-list">
-        <li ng-repeat="language in languages" ng-bind="language"></li>
+        <p> I'm a rookie at this so I am not really familiar with these languages:</p>
+        <p> javascript</p>
+        <p> css</p>
+        <p> html</p>
+
       </ul>
     </section>
     <section class="tools" ng-controller="ToolsCtrl">
@@ -48,6 +51,7 @@
       </header>
       <ul class="tool-types-list">
         <li ng-repeat="type in toolTypes">
+          <p> I don't know any tools</p>
           <h2 class="tool-type-heading" ng-bind="type.name"></h2>
           <ul class="tools-list">
             <li ng-repeat="tool in type.tools" ng-bind="tool"></li>
@@ -55,39 +59,10 @@
         </li>
       </ul>
     </section>
-    <section class="clients" ng-controller="ClientsCtrl">
-      <header>
-        <h1 class="clients-heading">Clients</h1>
-      </header>
-      <ol class="clients-list">
-        <li class="client" itemscope="itemscope" ng-repeat="client in clients" itemtype="http://schema.org/Organization">
-          <h2 class="client-name"><span itemprop="name" ng-bind="client.name"></span><a class="client-link" itemprop="url" ng-href="{{ client.url }}" title="{{ client.name }}'s website" ng-bind="client.url"><span class="text"></span></a></h2>
-          <div class="client-time-worked-at">
-            <time ng-bind="client.startDate"></time> -
-            <time ng-bind="client.endDate"></time>
-          </div>
-          <p ng-bind="client.service"></p>
-          <ul>
-            <li ng-repeat="highlight in client.highlights" ng-bind="highlight"></li>
-          </ul>
-          <blockquote class="client-testimonial" ng-if="client.testimonial">
-            <p ng-bind="client.testimonial.content"></p>
-            <footer ng-bind="client.testimonial.author.name + ', ' + client.testimonial.author.jobTitle"></footer>
-          </blockquote>
-        </li>
-      </ol>
-    </section>
-  </div>
-</article>
-  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js'></script>
-
-
-
-    <script  src="index.js"></script>
-
-
-
-
-</body>
-
-</html>
+    <h1> College/Education</h1>
+    <p> I attend John O' Connell high school right now</p>
+    <p> I am currently a senior there</p>
+    <p> I plan to attend city college after I graduate fom O' Connell</p>
+    <h1> My Future?</h1>
+      <p> During college I would like to take computer science maybe graphic design because I love technology.</p>
+      <p> Another career that I would like to pursue is maybe sports medicine, I would like to help out athletes as they compete</p>
